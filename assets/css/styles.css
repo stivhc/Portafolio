@@ -5,19 +5,15 @@ header {
   background-color: #e4e9d5;
 }
 
-.logo {
-  font-size: 1.5rem;
-  letter-spacing: 4px;
-  margin-bottom: 1rem;
+/* Ajusta el espaciado del cuerpo para evitar que el contenido se superponga */
+body {
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina padding por defecto */
+  padding-top: 60px;
 }
 
-nav {
-  color: #333333;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  height: 60px;
+.navbar {
+  position: fixed;
 }
 
 /* Hero Section */
@@ -35,24 +31,12 @@ nav {
   margin: auto;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-}
-
 .hero-content h1 {
   font-size: 2rem;
   font-weight: normal;
   margin-bottom: 1.5rem;
   line-height: 1.4;
-}
-
-.hero-content p {
-  color: #666666;
-  margin-bottom: 1rem;
-}
-
-/* Focus Areas */
+} /* Focus Areas */
 
 #Proyectos {
   background-color: #a98467;
@@ -88,11 +72,6 @@ nav {
   margin-top: 1.5rem;
   font-size: 0.9rem;
   letter-spacing: 1px;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  padding-top: 60px;
 }
 
 .section {
