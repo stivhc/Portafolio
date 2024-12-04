@@ -1,0 +1,127 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f5f5f3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem 0;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.hero-content p {
+  color: #666666;
+  margin-bottom: 1rem;
+}
+
+/* Focus Areas */
+.focus-areas {
+  background-color: #e5e6e4;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.focus-item img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Value Proposition */
+.value-prop {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  padding: 4rem 0;
+  align-items: center;
+}
+
+.value-prop img {
+  width: 100%;
+  height: auto;
+}
+
+/* Therapist Section */
+.therapist {
+  background-color: #e5e6e4;
+  padding: 4rem 0;
+}
+
+.therapist-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.therapist img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}

@@ -72,95 +72,125 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav id="nav-bar" class="navbar bg-black border-bottom border-body navbar-expand-lg fixed-top" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <p class="d-inline-block align-text-top">Portafolio</p>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
-          <li class="nav-item">
-            <a class="nav-link" href="#acerca-de-mi">Acerca de mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Actualmente">Actualmente</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Publicaciones">Publicaciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
+<!-- HEADER -->
+  <header>
+<!-- NAVBAR-->
+    <div class="container">
+      <h1 class="logo">PORTAFOLIO</h1>
+      <nav>
+        <a href="#acerca-de-mi">Acerca de mi</a>
+        <a href="#Actualmente">Actualmente</a>
+        <a href="#Publicaciones">Publicaciones</a>
+        <a href="#Proyectos">Proyectos</a>
+      </nav>
     </div>
-  </nav>
-  <!-- Encabezado -->
 
-  <header id="acerca-de-mi">
-    <div class="row container my-4 d-flex justify-content-center align-items-center flex-md-column flex-lg-row px-2">
-      <div class="col-md-6 col-lg-4 d-flex pl-lg-5">
-        <img class="rounded-circle img-fluid" src='assets/img/profile-Esteban.jpg' alt="Imagen de perfil">
-      </div>
 
-      <div class="col-md-10 col-lg-8 mt-md-4 py-3 text-justify pl-5 align-self-center">
-        <h2 class="title is-4">Sobre mí</h2>
-        <p class="paragraph" style="text-align: justify;">Soy Sociólogo de la Universidad de Chile y Bachiller en
-          Ciencias
-          Sociales y Humanidades. Además, soy desarrollador Full Stack con
-          experiencia en Python, HTML, CSS, R y JavaScript. Me interesan las investigaciones que permitan resolver las
-          diversas problemáticas sociales, especialmente aquellas enfocadas al estudio del malestar subjetivo. Asimismo,
-          parte de mii objetivo es generar conocimientos y soluciones innovadoras que impacten positivamente en la
-          sociedad, combinando la rigurosidad académica con la versatilidad de la tecnología.</p>
-        <div class="d-flex justify-content-center py-3">
-          <a class="btnSaberMas btn btn-outline-dark btn-block mb-5 font-weight-bold" href="CV/CV_PROFESIONAL.pdf"
-            target="_blank" role="button" data-toggle="tooltip" data-placement="top"
-            title="Presiona para ver mi currículum">Descarga mi CV</a>
+<!-- ACERCA DE MI -->
+    <section id="acerca-de-mi" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <img class="rounded-circle img-fluid" src='assets/img/profile-Esteban.jpg' alt="Imagen de perfil">
+          </div>
+          <div class="col-md-8">
+            <h2 class="mb-4">Acerca de mí</h2>
+            <p class="mb-4" style="text-align: justify;">Soy Sociólogo de la Universidad de Chile y Bachiller en Ciencias Sociales y Humanidades.
+              Además, soy desarrollador Full Stack con experiencia en Python, HTML, CSS, R y JavaScript. Me interesan
+              las investigaciones que permitan resolver las diversas problemáticas sociales, especialmente aquellas
+              enfocadas al estudio del malestar subjetivo. Asimismo, parte de mi objetivo es generar conocimientos y
+              soluciones innovadoras que impacten positivamente en la sociedad, combinando la rigurosidad académica con
+              la versatilidad de la tecnología.</p>
+            <div class="mb-4">
+              <a class="btn btn-outline-dark" href="CV/CV_PROFESIONAL.pdf" target="_blank" role="button">
+                Descarga mi CV
+              </a>
+            </div>
+            <div class="buttons is-centered">
+            <div class="d-flex">
+              <a class="me-3" href="mailto:esteban.alfonso999@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope fa-2x text-centre"></i>
+              </a>
+              <a class="me-3" href="https://www.linkedin.com/in/esteban-hern%C3%A1ndez-c%C3%A1ceres-979a46208/"
+                target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+              <a href="https://github.com/stivhc" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+            </div>
+          </div>
         </div>
-        <p class="buttons is-centered">
-          <a class="swirl-in-fwd" href="mailto:esteban.alfonso999@gmail.com"><i class="fas fa-envelope fa-1x"
-              data-toggle="tooltip" data-placement="top" title='esteban.alfonso999@gmail.com'></i></a>
-          <a href="https://www.linkedin.com/in/esteban-hern%C3%A1ndez-c%C3%A1ceres-979a46208/" target="about_blank"><i
-              class="fab fa-linkedin-in fa-1x" data="target" about="_blank" data-toggle="tooltip" data-placement="top"
-              title="Visita mi perfil en LinkedIn"></i></a></a>
-          <a href="https://github.com/stivhc" target="about_blank" data-toggle="tooltip" data-placement="top"
-            title="Visita mi perfil en Github"><i class="fab fa-github fa-1x"></i></a>
-        </p>
+      </div>
+    </section>
+  </header>
+
+<!-- PUBLICACIONES -->
+  <section id="Publicaciones" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="title is-4 text-center">Publicaciones</h2>
+      <div class="row justify-content-center gy-4">
+        <!-- Primera Publicación -->
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <div class="card h-100">
+            <div class="card-img-top p-3">
+              <img src="assets/img/oei.png" alt="OEI Publication" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Experiencias Inclusivas en la Educación Superior Chilena</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-3">
+              <a href="https://oei.int/oficinas/chile/publicaciones/experiencias-inclusivas-en-la-educacion-superior-chilena/"
+                target="_blank" class="btn btn-outline-dark w-100">
+                Ver Publicación
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segunda Publicación -->
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <div class="card h-100">
+            <div class="card-img-top p-3">
+              <img src="assets/img/monografica.png" alt="Monografica Publication" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <p class="card-text">La Obra de Jacques-Louis David y la Revolución Francesa</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-3">
+              <a href="http://bachillerato.uchile.cl/monografias/monografias01/" target="_blank"
+                class="btn btn-outline-dark w-100">
+                Ver Publicación
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-  </header>
+  </section>
 
 
   <!-- Actualidad -->
-  <section id="Actualmente" class="Actualmente" id="about">
+  <section id="Actualmente" class="py-5 bg-light">
     <div class="container">
-      <div class="container actualidad">
-        <div class="row align-items-center">
-          <div class="col-md-6 about-text">
-            <h2 class="title is-4">Actualmente</h2>
-            <p style="text-align: justify;">Me encuentro desarrollando un artículo académico sobre la relación de los
-              discursos meritocraticos y el
-              malestar subjetivo en estudiantes de la Universidad de Chile. La relevancia de esta investigación es
-              visibilizar la influencia de los recursos simbólicos, los procesos de socialización y los discursos
-              presentes en nuestra sociedad. Comprendiendot que la salud mental se entrelaza con cuestiones psicológicas
-              y sociales, puesto que reflejan las tensiones del individualismo contemporáneo. La autoresponsabilización
-              y el enfoque en el individuo reafirman la necesidad de abordar la salud mental no sólo como un ámbito de
-              la psiquiatría y la psicología clínica, sino como un tema transversal que afecta a toda la sociedad . Por
-              tanto, entender y combatir estos problemas requieren un enfoque que trascienda lo individual y lo
-              psicológico, integrando marcos impersonales y políticos.</p>
-          </div>
-          <div class="col-md-6 profile-image">
-            <img class="img-fluid" src="assets/img/profile-2.jpg" alt="acerca de mi">
-          </div>
+      <div class="row justify-content-center">
+        <div class="row align-items-center"></div>
+        <div class="col-md-6 about-text">
+          <h2 class="title is-4">Actualmente</h2>
+          <p style="text-align: justify;">Me encuentro desarrollando un artículo académico sobre la relación de los
+            discursos meritocraticos y el
+            malestar subjetivo en estudiantes de la Universidad de Chile. La relevancia de esta investigación es
+            visibilizar la influencia de los recursos simbólicos, los procesos de socialización y los discursos
+            presentes en nuestra sociedad. Comprendiendot que la salud mental se entrelaza con cuestiones psicológicas
+            y sociales, puesto que reflejan las tensiones del individualismo contemporáneo. La autoresponsabilización
+            y el enfoque en el individuo reafirman la necesidad de abordar la salud mental no sólo como un ámbito de
+            la psiquiatría y la psicología clínica, sino como un tema transversal que afecta a toda la sociedad . Por
+            tanto, entender y combatir estos problemas requieren un enfoque que trascienda lo individual y lo
+            psicológico, integrando marcos impersonales y políticos.</p>
+        </div>
+        <div class="col-md-6 profile-image">
+          <img class="img-fluid" src="assets/img/profile-2.jpg" alt="acerca de mi">
         </div>
       </div>
     </div>
@@ -225,53 +255,6 @@
           </article>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  <!-- Publicaciones -->
-  <section id="Proyectos" class="container">
-    <h2 class="title is-4">Mis Publicaciones</h2>
-    <!-- PAPER 1 -->
-    <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-        <div class="card">
-          <div class="img-wrapper">
-            <a href=""></a>
-            <img src="assets/img/oei.png" alt="">
-            </a>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Experiencias Inclusivas en la Educación Superior Chilena
-          </div>
-          <div class="card-body card-body_buttons">
-            <a href="https://oei.int/oficinas/chile/publicaciones/experiencias-inclusivas-en-la-educacion-superior-chilena/"
-              target="_blank" class="btn btn-outline-dark card-body_btn">Ver
-              Publicación</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- PAPER 2 -->
-    <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-        <div class="card">
-          <div class="img-wrapper">
-            <a href=""></a>
-            <img src="assets/img/monografica.png" alt="">
-            </a>
-          </div>
-          <div class="card-body">
-            <p class="card-text">La Obra de Jacques-Louis David y la Revolución Francesa
-          </div>
-          <div class="card-body card-body_buttons">
-            <a href="http://bachillerato.uchile.cl/monografias/monografias01/" target="_blank"
-              class="btn btn-outline-dark card-body_btn">Ver
-              Publicación</a>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
 
