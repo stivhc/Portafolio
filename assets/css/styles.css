@@ -1,6 +1,7 @@
 header {
   padding: 2rem 0;
   text-align: center;
+  background-color: #e4e9d5;
 }
 
 .logo {
@@ -41,6 +42,44 @@ nav a {
 .hero-content p {
   color: #666666;
   margin-bottom: 1rem;
+}
+
+/* Focus Areas */
+
+#Proyectos {
+  background-color: #a98467;
+}
+#Publicaciones {
+  background-color: #a98467;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.publicaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.publicaciones-item img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+#Actualmente {
+  background-color: #e4e9d5;
+}
+
+#btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 body {
@@ -139,34 +178,4 @@ body {
   border-radius: 20px;
   background-color: #333;
   color: #fff;
-}
-
-/* Focus Areas */
-#Publicaciones {
-  background-color: #e5e6e4;
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.publicaciones-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.publicaciones-item img {
-  width: 50px;
-  margin-bottom: 1rem;
-}
-
-#btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #000000;
-  color: white;
-  text-decoration: none;
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
 }
