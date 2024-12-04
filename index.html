@@ -72,41 +72,52 @@
 </head>
 
 <body>
-<!-- HEADER -->
-<header>
-<!-- NAVBAR-->
-    <div class="container">
-      <h1 class="logo">PORTAFOLIO</h1>
-      <nav>
+
+  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#acerca-de-mi">
+        Esteban Hernández
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
         <a href="#acerca-de-mi">Acerca de mi</a>
         <a href="#Actualmente">Actualmente</a>
         <a href="#Publicaciones">Publicaciones</a>
         <a href="#Proyectos">Proyectos</a>
-      </nav>
+      </div>
     </div>
+  </nav>
 
-
-<!-- ACERCA DE MI -->
-    <section id="acerca-de-mi" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-4 mb-4 mb-md-0">
+  <!-- ACERCA DE MI -->
+  <header id="acerca-de-mi" class="py-5 px-5">
+    <div class="container has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-narrow">
+          <figure class="image is-128x128 is-inline-block">
             <img class="rounded-circle img-fluid" src='assets/img/profile-Esteban.jpg' alt="Imagen de perfil">
+          </figure>
+        </div>
+        <div class="col-md-8">
+          <h2 class="mb-4">Acerca de mí</h2>
+          <p class="mb-4" style="text-align: justify;">Soy Sociólogo de la Universidad de Chile y Bachiller en Ciencias
+            Sociales y Humanidades.
+            Además, soy desarrollador Full Stack con experiencia en Python, HTML, CSS, R y JavaScript. Me interesan
+            las investigaciones que permitan resolver las diversas problemáticas sociales, especialmente aquellas
+            enfocadas al estudio del malestar subjetivo. Asimismo, parte de mi objetivo es generar conocimientos y
+            soluciones innovadoras que impacten positivamente en la sociedad, combinando la rigurosidad académica con
+            la versatilidad de la tecnología.</p>
+          <div class="buttons">
+            <a class="btn btn-outline-dark" href="CV/CV_PROFESIONAL.pdf" target="_blank" role="button">
+              Descarga mi CV
+            </a>
           </div>
-          <div class="col-md-8">
-            <h2 class="mb-4">Acerca de mí</h2>
-            <p class="mb-4" style="text-align: justify;">Soy Sociólogo de la Universidad de Chile y Bachiller en Ciencias Sociales y Humanidades.
-              Además, soy desarrollador Full Stack con experiencia en Python, HTML, CSS, R y JavaScript. Me interesan
-              las investigaciones que permitan resolver las diversas problemáticas sociales, especialmente aquellas
-              enfocadas al estudio del malestar subjetivo. Asimismo, parte de mi objetivo es generar conocimientos y
-              soluciones innovadoras que impacten positivamente en la sociedad, combinando la rigurosidad académica con
-              la versatilidad de la tecnología.</p>
-            <div class="mb-4">
-              <a class="btn btn-outline-dark" href="CV/CV_PROFESIONAL.pdf" target="_blank" role="button">
-                Descarga mi CV
-              </a>
-            </div>
-            <div class="buttons is-centered">
+          <div class="buttons">
             <div class="d-flex">
               <a class="me-3" href="mailto:esteban.alfonso999@gmail.com" aria-label="Email">
                 <i class="fas fa-envelope fa-2x text-centre"></i>
@@ -119,140 +130,140 @@
                 <i class="fab fa-github fa-2x"></i>
               </a>
             </div>
-            </div>
           </div>
         </div>
       </div>
-    </section>
-</header>
+    </div>
+  </header>
+
 
   <!-- Proyectos Destacados -->
-<section id="Proyectos" class="section py-5">
-  <div class="container">
-    <h2 class="title is-4 text-center mb-4">Mis Proyectos</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-      <!-- Iguana Page -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/iguana-page.png" class="card-img-top" alt="Iguana Page">
-          <div class="card-body">
-            <h5 class="card-title">Iguana Page</h5>
-            <p class="card-text">Página sobre Iguanas</p>
-            <div class="text-center my-2">
-              <span class="badge bg-dark">Bootstrap</span>
-              <span class="badge bg-dark">HTML</span>
-              <span class="badge bg-dark">CSS</span>
-              <span class="badge bg-dark">JQuery</span>
+  <section id="Proyectos" class="section py-5">
+    <div class="container">
+      <h2 class="title is-4 text-center mb-4">Mis Proyectos</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Iguana Page -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/img/iguana-page.png" class="card-img-top" alt="Iguana Page">
+            <div class="card-body">
+              <h5 class="card-title">Iguana Page</h5>
+              <p class="card-text">Página sobre Iguanas</p>
+              <div class="text-center my-2">
+                <span class="badge bg-dark">Bootstrap</span>
+                <span class="badge bg-dark">HTML</span>
+                <span class="badge bg-dark">CSS</span>
+                <span class="badge bg-dark">JQuery</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <a href="https://stivhc.github.io/iguana-page-version2/" target="_blank"
+                class="btn btn-outline-dark btn-sm">Ver página</a>
+              <a href="https://github.com/stivhc/iguana-page-version2" target="_blank"
+                class="btn btn-outline-dark btn-sm">Repositorio</a>
             </div>
           </div>
-          <div class="card-footer bg-transparent text-center">
-            <a href="https://stivhc.github.io/iguana-page-version2/" target="_blank"
-              class="btn btn-outline-dark btn-sm">Ver página</a>
-            <a href="https://github.com/stivhc/iguana-page-version2" target="_blank"
-              class="btn btn-outline-dark btn-sm">Repositorio</a>
-          </div>
         </div>
-      </div>
 
-      <!-- Olivia Ros -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/olivia-ros.png" class="card-img-top" alt="Olivia Ros">
-          <div class="card-body">
-            <h5 class="card-title">Olivia Ros</h5>
-            <p class="card-text">Perfil profesional</p>
-            <div class="text-center my-2">
-              <span class="badge bg-dark">Bootstrap</span>
-              <span class="badge bg-dark">HTML</span>
-              <span class="badge bg-dark">CSS</span>
-              <span class="badge bg-dark">JQuery</span>
+        <!-- Olivia Ros -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/img/olivia-ros.png" class="card-img-top" alt="Olivia Ros">
+            <div class="card-body">
+              <h5 class="card-title">Olivia Ros</h5>
+              <p class="card-text">Perfil profesional</p>
+              <div class="text-center my-2">
+                <span class="badge bg-dark">Bootstrap</span>
+                <span class="badge bg-dark">HTML</span>
+                <span class="badge bg-dark">CSS</span>
+                <span class="badge bg-dark">JQuery</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
+              <a href="https://stivhc.github.io/olivia-ross/" target="_blank" class="btn btn-outline-dark btn-sm">Ver
+                página</a>
+              <a href="https://github.com/stivhc/olivia-ross" target="_blank"
+                class="btn btn-outline-dark btn-sm">Repositorio</a>
             </div>
           </div>
-          <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
-            <a href="https://stivhc.github.io/olivia-ross/" target="_blank"
-              class="btn btn-outline-dark btn-sm">Ver página</a>
-            <a href="https://github.com/stivhc/olivia-ross" target="_blank"
-              class="btn btn-outline-dark btn-sm">Repositorio</a>
-          </div>
         </div>
-      </div>
 
-      <!-- Viajes Chile -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/viajes-chile.png" class="card-img-top" alt="Viajes Chile">
-          <div class="card-body">
-            <h5 class="card-title">Viajes Chiles</h5>
-            <p class="card-text">Lugares turísticos de Chile</p>
-            <div class="text-center my-2">
-              <span class="badge bg-dark">Bootstrap</span>
-              <span class="badge bg-dark">HTML</span>
-              <span class="badge bg-dark">CSS</span>
-              <span class="badge bg-dark">JQuery</span>
+        <!-- Viajes Chile -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/img/viajes-chile.png" class="card-img-top" alt="Viajes Chile">
+            <div class="card-body">
+              <h5 class="card-title">Viajes Chiles</h5>
+              <p class="card-text">Lugares turísticos de Chile</p>
+              <div class="text-center my-2">
+                <span class="badge bg-dark">Bootstrap</span>
+                <span class="badge bg-dark">HTML</span>
+                <span class="badge bg-dark">CSS</span>
+                <span class="badge bg-dark">JQuery</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
+              <a href="https://stivhc.github.io/viajes-chile/" target="_blank" class="btn btn-outline-dark btn-sm">Ver
+                página</a>
+              <a href="https://github.com/stivhc/viajes-chile" target="_blank"
+                class="btn btn-outline-dark btn-sm">Repositorio</a>
             </div>
           </div>
-          <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
-            <a href="https://stivhc.github.io/viajes-chile/" target="_blank"
-              class="btn btn-outline-dark btn-sm">Ver página</a>
-            <a href="https://github.com/stivhc/viajes-chile" target="_blank"
-              class="btn btn-outline-dark btn-sm">Repositorio</a>
-          </div>
         </div>
-      </div>
         <!-- Ricomida -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/ricomida.png" class="card-img-top" alt="Ricomida">
-          <div class="card-body">
-            <h5 class="card-title">Ricomida</h5>
-            <p class="card-text">Página de recetas</p>
-            <div class="text-center my-2">
-              <span class="badge bg-dark">Bootstrap</span>
-              <span class="badge bg-dark">HTML</span>
-              <span class="badge bg-dark">CSS</span>
-              <span class="badge bg-dark">JQuery</span>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/img/ricomida.png" class="card-img-top" alt="Ricomida">
+            <div class="card-body">
+              <h5 class="card-title">Ricomida</h5>
+              <p class="card-text">Página de recetas</p>
+              <div class="text-center my-2">
+                <span class="badge bg-dark">Bootstrap</span>
+                <span class="badge bg-dark">HTML</span>
+                <span class="badge bg-dark">CSS</span>
+                <span class="badge bg-dark">JQuery</span>
+              </div>
             </div>
-          </div>
-          <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
-            <a href="https://stivhc.github.io/ricomida/" target="_blank"
-              class="btn btn-outline-dark btn-sm">Ver página</a>
-            <a href="https://github.com/stivhc/ricomida" target="_blank"
-              class="btn btn-outline-dark btn-sm">Repositorio</a>
+            <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
+              <a href="https://stivhc.github.io/ricomida/" target="_blank" class="btn btn-outline-dark btn-sm">Ver
+                página</a>
+              <a href="https://github.com/stivhc/ricomida" target="_blank"
+                class="btn btn-outline-dark btn-sm">Repositorio</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Actualidad -->
-<section id="Actualmente" class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Columna de texto -->
-      <div class="col-md-6 about-text">
-        <h2 class="title is-4">Actualmente</h2>
-        <p style="text-align: justify;">
-          Me encuentro desarrollando un artículo académico sobre la relación de los discursos meritocráticos y el
-          malestar subjetivo en estudiantes de la Universidad de Chile. La relevancia de esta investigación es
-          visibilizar la influencia de los recursos simbólicos, los procesos de socialización y los discursos
-          presentes en nuestra sociedad. Comprendiendo que la salud mental se entrelaza con cuestiones psicológicas
-          y sociales, puesto que reflejan las tensiones del individualismo contemporáneo. La autoresponsabilización
-          y el enfoque en el individuo reafirman la necesidad de abordar la salud mental no sólo como un ámbito de
-          la psiquiatría y la psicología clínica, sino como un tema transversal que afecta a toda la sociedad. Por
-          tanto, entender y combatir estos problemas requieren un enfoque que trascienda lo individual y lo
-          psicológico, integrando marcos impersonales y políticos.
-        </p>
-      </div>
-      <!-- Columna de imagen -->
-      <div class="col-md-6 profile-image">
-        <img class="img-fluid rounded shadow" src="assets/img/profile-2.jpg" alt="acerca de mi">
+  <section id="Actualmente" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna de texto -->
+        <div class="col-md-6 about-text">
+          <h2 class="title is-4">Actualmente</h2>
+          <p style="text-align: justify;">
+            Me encuentro desarrollando un artículo académico sobre la relación de los discursos meritocráticos y el
+            malestar subjetivo en estudiantes de la Universidad de Chile. La relevancia de esta investigación es
+            visibilizar la influencia de los recursos simbólicos, los procesos de socialización y los discursos
+            presentes en nuestra sociedad. Comprendiendo que la salud mental se entrelaza con cuestiones psicológicas
+            y sociales, puesto que reflejan las tensiones del individualismo contemporáneo. La autoresponsabilización
+            y el enfoque en el individuo reafirman la necesidad de abordar la salud mental no sólo como un ámbito de
+            la psiquiatría y la psicología clínica, sino como un tema transversal que afecta a toda la sociedad. Por
+            tanto, entender y combatir estos problemas requieren un enfoque que trascienda lo individual y lo
+            psicológico, integrando marcos impersonales y políticos.
+          </p>
+        </div>
+        <!-- Columna de imagen -->
+        <div class="col-md-6 profile-image">
+          <img class="img-fluid rounded shadow" src="assets/img/profile-2.jpg" alt="acerca de mi">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PUBLICACIONES -->
+  <!-- PUBLICACIONES -->
   <section id="Publicaciones" class="py-5">
     <div class="container">
       <h2 class="title is-4 text-center">Publicaciones</h2>
@@ -364,7 +375,7 @@
 
 
   <!-- Habilidades -->
-     <!-- EDITAR -->
+  <!-- EDITAR -->
   <section class="section">
     <div class="container">
       <h2 class="title is-4">Habilidades</h2>
@@ -381,7 +392,7 @@
     </div>
 
     <!-- FOOTER -->
-          <!-- EDITAR -->
+    <!-- EDITAR -->
     <footer id="Contacto" class="align-middle text-center py-5">
       <div class="container">
         <a class="swirl-in-fwd" href="mailto:esteban.alfonso999@gmail.com"><i class="fas fa-envelope"
