@@ -1,6 +1,7 @@
 .navbar {
   position: fixed;
   background-color: #bad4aa;
+  font-family: "Roboto", sans-serif;
 }
 .navbar-collapse {
   display: none; /* Oculto por defecto */
@@ -20,6 +21,7 @@ header {
   text-align: center;
   background-color: #f0ead2;
   color: #000000;
+  font-family: "Roboto", sans-serif;
 }
 
 #fotodeperfil {
@@ -37,13 +39,22 @@ header {
 
 #Proyectos {
   background-color: #bad4aa;
+  font-family: "Roboto", sans-serif;
+}
+#ProyectosFont {
+  font-family: "Roboto", sans-serif;
 }
 #Publicaciones {
   background-color: #bad4aa;
   padding: 4rem 0;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
+#educacion {
+  background-color: #f0ead2;
+  font-family: "Roboto", sans-serif;
+}
 #btn {
   display: inline-block;
   padding: 12px 24px;
@@ -53,6 +64,7 @@ header {
   margin-top: 1.5rem;
   font-size: 0.9rem;
   letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
 }
 
 .publicaciones-grid {
@@ -60,6 +72,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .publicaciones-item img {
@@ -70,6 +83,7 @@ header {
 #Actualmente {
   background-color: #f0ead2;
   color: #000000;
+  font-family: "Roboto", sans-serif;
 }
 
 .section {
@@ -78,58 +92,16 @@ header {
 
 #experiencia {
   background-color: #f0ead2;
+  font-family: "Roboto", sans-serif;
 }
 
 .image.is-rounded {
   border: 3px solid #00d1b2;
 }
 
-/* Asegurar que las imágenes sean responsivas */
-.card img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-height: 150px; /* Ajusta la altura máxima para mantener proporción */
-}
-
-.card {
-  width: 300px; /* Tamaño uniforme de las tarjetas */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  border-radius: 10px; /* Bordes redondeados */
-  overflow: hidden; /* Evita desbordamientos */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efecto flotante de las card*/
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-  width: 100%;
-  height: 180px;
-  object-fit: cover; /* Asegura que las imágenes se ajusten */
-}
-
-.card-body {
-  padding: 15px;
-  text-align: center;
-}
-
-/* Badges Styles */
-.container_badges span {
-  display: inline-block;
-  margin: 5px;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
 #experiencia {
   color: #000000;
+  font-family: "Roboto", sans-serif;
 }
 
 .habilidades {
@@ -149,4 +121,52 @@ header {
 footer {
   background-color: #bad4aa;
   color: #000000;
+}
+
+/* Asegurar que las imágenes sean responsivas */
+.card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 150px; /* Ajusta la altura máxima para mantener proporción */
+}
+
+.card {
+  width: 300px; /* Tamaño uniforme de las tarjetas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: all 0.3s ease;
+}
+
+/* Efecto flotante de las card*/
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Asegura que las imágenes se ajusten */
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Badges Styles */
+.container_badges span {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
 }

@@ -42,6 +42,13 @@
   <link rel="icon" href="/ruta-al-favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="/ruta-al-favicon-apple.png" />
 
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
   <!-- Información estructurada (JSON-LD) -->
   <script type="application/ld+json">
       {
@@ -62,11 +69,11 @@
     </script>
 
   <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Enlace a AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Enlace a CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -77,14 +84,8 @@
   <nav class="navbar navbar-expand-lg fixed-top m-auto">
     <div class="container">
       <a class="navbar-brand fw-bold text-dark" href="#acerca-de-mi"> Portafolio</a>
-      <button
-        id="navbar-toggler"
-        class="navbar-toggler"
-        type="button"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button id="navbar-toggler" class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse" id="navbarNav">
@@ -101,6 +102,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#Publicaciones">Publicaciones</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#educacion">Educación</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -108,14 +112,14 @@
 
 
   <!-- ACERCA DE MI (HEADER)-->
-  <header class="bg-gradient py-5">
-    <div class="container text-center py-5">
+  <header id="acerca-de-mi" class="bg-gradient py-5 mt-5">
+    <div class="container text-center py-5 mt-4">
       <img src="assets/img/profile-Esteban.jpg" alt="Foto de perfil"
         class="rounded-circle mb-3 border border-4 border-white shadow" width="200" data-aos="zoom-in" />
       <h1 class="display-4 fw-bold mb-0" data-aos="fade-up">
         Esteban Hernández Cáceres
       </h1>
-      <p class="lead fs-3 mt-2" data-aos="fade-up" data-aos-delay="100">
+      <p class="lead fs-3 mt-2 text-justify" data-aos="fade-up" data-aos-delay="100">
         Soy Sociólogo de la Universidad de Chile y Bachiller en Ciencias
         Sociales y Humanidades.
         Además, soy desarrollador Full Stack con experiencia en Python, HTML, CSS, R y JavaScript. Me interesan
@@ -146,51 +150,54 @@
 
 
   <!-- Proyectos Destacados -->
-  <section id="Proyectos" class="section py-5">
-    <div class="container">
-      <h2 class="title is-4 text-center mb-4">Mis Proyectos</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        <!-- Iguana Page -->
+  <section id="Proyectos" class="py-5">
+    <div class="container py-5">
+      <h2 id='ProyectosFont' class=" title is-4 text-center mb-4 text-gradient display-4 text-dark">Mis Proyectos
+      </h2>
+      <div id="project-cards" data-aos="flip-up" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Vehículos Empresa -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <img src="assets/img/iguana-page.png" class="card-img-top" alt="Iguana Page">
+            <img src="assets/img/vehiculo.png" class="card-img-top" alt="Vehículo Empresa">
             <div class="card-body">
-              <h5 class="card-title">Iguana Page</h5>
-              <p class="card-text">Página sobre Iguanas</p>
+              <h5 class="card-title">Vehículo Empresa</h5>
+              <p class="card-text">Modelamiento de un sistema básico para gestionar los datos de una empresa que opera
+                vehículos utilitarios de reparto. El sistema permite relacionar modelos y crear operaciones que soportan
+                la gestión y manipulación de datos almacenados en una base de datos. A través de este proyecto se busca
+                realizar un análisis similar al de un sistema comercial.</p>
               <div class="text-center my-2">
-                <span class="badge bg-dark">Bootstrap</span>
-                <span class="badge bg-dark">HTML</span>
-                <span class="badge bg-dark">CSS</span>
-                <span class="badge bg-dark">JQuery</span>
+                <span class="badge bg-dark">Django</span>
+                <span class="badge bg-dark">Python</span>
               </div>
             </div>
             <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
-              <a href="https://stivhc.github.io/iguana-page-version2/" target="_blank"
-                class="btn btn-outline-dark btn-sm">Ver página</a>
-              <a href="https://github.com/stivhc/iguana-page-version2" target="_blank"
+              <a href="https://github.com/stivhc/vehiculos_empresa" target="_blank"
                 class="btn btn-outline-dark btn-sm">Repositorio</a>
             </div>
           </div>
         </div>
 
-        <!-- Olivia Ros -->
+        <!-- G3 INMOBILIARIA -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <img src="assets/img/olivia-ros.png" class="card-img-top" alt="Olivia Ros">
+            <img src="assets/img/g3.png" class="card-img-top" alt="G3 INMOBILIARIA">
             <div class="card-body">
-              <h5 class="card-title">Olivia Ross</h5>
-              <p class="card-text">Perfil profesional</p>
+              <h5 class="card-title">G3 Inmobiliaria</h5>
+              <p class="card-text">Este proyecto es una aplicación web desarrollada con Django que permite a usuarios
+                revisar, gestionar y administrar inmuebles disponibles para arriendo. La aplicación utiliza el patrón
+                MVC y está diseñada para cubrir funcionalidades tanto para arrendatarios como para arrendadores.</p>
               <div class="text-center my-2">
                 <span class="badge bg-dark">Bootstrap</span>
                 <span class="badge bg-dark">HTML</span>
                 <span class="badge bg-dark">CSS</span>
                 <span class="badge bg-dark">JQuery</span>
+                <span class="badge bg-dark">Django</span>
+                <span class="badge bg-dark">Python</span>
+                <span class="badge bg-dark">SQL</span>
               </div>
             </div>
             <div class="card-footer bg-transparent d-flex justify-content-center gap-2">
-              <a href="https://stivhc.github.io/olivia-ross/" target="_blank" class="btn btn-outline-dark btn-sm">Ver
-                página</a>
-              <a href="https://github.com/stivhc/olivia-ross" target="_blank"
+              <a href="https://github.com/stivhc/G3_PROPIEDADES" target="_blank"
                 class="btn btn-outline-dark btn-sm">Repositorio</a>
             </div>
           </div>
@@ -202,7 +209,9 @@
             <img src="assets/img/viajes-chile.png" class="card-img-top" alt="Viajes Chile">
             <div class="card-body">
               <h5 class="card-title">Viajes Chiles</h5>
-              <p class="card-text">Lugares turísticos de Chile</p>
+              <p class="card-text">Diseño y desarrollo de una landing page sobre lugares turísticos de Chile con un
+                enfoque en estética y funcionalidad, incorporando una navegación fija, carrusel de imágenes, secciones
+                organizadas en tarjetas, un formulario de contacto y un pie de página con enlaces a redes sociales.</p>
               <div class="text-center my-2">
                 <span class="badge bg-dark">Bootstrap</span>
                 <span class="badge bg-dark">HTML</span>
@@ -224,7 +233,8 @@
             <img src="assets/img/ricomida.png" class="card-img-top" alt="Ricomida">
             <div class="card-body">
               <h5 class="card-title">Ricomida</h5>
-              <p class="card-text">Página de recetas</p>
+              <p class="card-text">Página web responsiva de recetas, aplicando HTML, CSS, Bootstrap y jQuery para
+                estilos, adaptabilidad e interacciones como clics, animaciones y ventanas emergentes.</p>
               <div class="text-center my-2">
                 <span class="badge bg-dark">Bootstrap</span>
                 <span class="badge bg-dark">HTML</span>
@@ -246,7 +256,7 @@
 
   <!-- Actualidad -->
   <section id="Actualmente" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
       <div class="row align-items-center">
         <!-- Columna de texto -->
         <div class="col-md-6 about-text">
@@ -275,7 +285,7 @@
   <section id="Publicaciones" class="py-5">
     <div class="container">
       <h2 class="title is-4 text-center">Publicaciones</h2>
-      <div class="row justify-content-center gy-4">
+      <div class="row justify-content-center gy-4" data-aos="zoom-in">
         <!-- Primera Publicación -->
         <div class="col-sm-12 col-md-6 col-lg-5">
           <div class="card h-100">
@@ -284,6 +294,14 @@
             </div>
             <div class="card-body">
               <p class="card-text">Experiencias Inclusivas en la Educación Superior Chilena</p>
+              <p class="card-text" style="text-align: justify;">Este artículo sintetiza los principales resultados del
+                proceso de caracterización de estudiantes
+                con discapacidad del año 2022 en la Universidad de Chile, en el marco de la implementación
+                de la Política Universitaria de Inclusión y Discapacidad en la perspectiva de la Diversidad
+                Funcional, uno de cuyos objetivos mandata la realización de mediciones destinadas a
+                determinar cuántas personas con discapacidad forman parte de la comunidad universitaria,
+                además de identificar las barreras que pudieran impedir o restringir su participación plena y
+                efectiva en igualdad de condiciones con las demás.</p>
             </div>
             <div class="card-footer bg-transparent border-0 p-3">
               <a href="https://oei.int/oficinas/chile/publicaciones/experiencias-inclusivas-en-la-educacion-superior-chilena/"
@@ -302,6 +320,17 @@
             </div>
             <div class="card-body">
               <p class="card-text">La Obra de Jacques-Louis David y la Revolución Francesa</p>
+              <p class="card-text" style="text-align: justify;">Este artículo revisa la relación entre el arte
+                neoclásico, mediante tres pinturas del artista Jacques-Louis David,
+                y la Revolución Francesa durante el período de 1789-1790. Se concluyó que su obra cumplió la importante
+                función
+                de que los y las ciudadanas captaran el sentido “adecuado” de la Revolución, lo que permite comprender
+                su
+                obra como medio propagandístico de los ideales revolucionarios y espejo de los cambios que estaba
+                viviendo
+                la sociedad. En ese sentido, su obra cumplió funciones legitimadoras tanto del poder político como de
+                los
+                movimientos sociales de la Revolución.</p>
             </div>
             <div class="card-footer bg-transparent border-0 p-3">
               <a href="http://bachillerato.uchile.cl/monografias/monografias01/" target="_blank"
@@ -316,74 +345,53 @@
   </section>
 
 
-
   <!-- Educación -->
-  <section id="experiencia" class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <h2 class="title is-4">Educación</h2>
-          <!-- Cada educación se representa con un artículo -->
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <div class="level">
-                  <div class="level-left">
-                    <div class="level-item">
-                      <h3 class="title is-5">Universidad de Chile</h3>
-                    </div>
-                  </div>
-                  <div class="level-right">
-                    <div class="level-item">
-                      <time datetime="2020-01-01">2019 - 2022</time>
-                    </div>
-                  </div>
-                </div>
-                <p class="subtitle is-6" style="color: black;">Licenciatura en Sociología</p>
-                <p style="text-align: justify;">Tuve una amplia formación teórica y metodológica enfocada en el análisis
-                  e investigación de los fenómenos sociales con el objetivo de tener un desempeño eficiente en el diseño
-                  e implementación de programas y políticas sociales. De manera mucho más específica, adquirí fuertes
-                  capacidades en estrategias de investigación y análisis de información cualitativa, como también un
-                  fuerte interés hacia las teorías sociológicas contemporáneas.</p>
-              </div>
+  <section id="educacion" class="py-5 text-black">
+    <div class="container py-5">
+      <h2 class="text-center mb-4 text-gradient display-4 title is-4">Educación</h2>
+      <div class="row justify-content-center g-4 text-center">
+        <div class="col-md-5" data-aos="fade-right">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Universidad de Chile</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2019 - 2022</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Licenciatura en Sociología</h6>
+              <p class="card-text" style="text-align: justify;">
+                Tuve una amplia formación teórica y metodológica enfocada en el análisis e investigación de los
+                fenómenos sociales con el objetivo de tener un desempeño eficiente en el diseño e implementación de
+                programas y políticas sociales. De manera mucho más específica, adquirí fuertes capacidades en
+                estrategias de investigación y análisis de información cualitativa, como también un fuerte interés hacia
+                las teorías sociológicas contemporáneas.
+              </p>
             </div>
-          </article>
-          <!-- Cada educación se representa con un artículo -->
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <div class="level">
-                  <div class="level-left">
-                    <div class="level-item">
-                      <h3 class="title is-5">Universidad de Chile</h3>
-                    </div>
-                  </div>
-                  <div class="level-right">
-                    <div class="level-item">
-                      <time datetime="2020-01-01">2017 - 2018</time>
-                    </div>
-                  </div>
-                </div>
-                <p class="subtitle is-6" style="color: black;">
-                  Programa Académico de Bachillerato
-                </p>
-                <p style="text-align: justify;">Desarrollé un conocimiento integral en distintas disciplinas, tanto del
-                  área científica y humanista. Durante mi paso por el programa me adentré a diversos procesos académicos
-                  como la investigación, el análisis, el debate, entre otros. Asimismo, es aquí donde desarrollé un
-                  fuerte interés por las matemáticas, las teorías sociológicas y el estudio de la historia social.</p>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-5" data-aos="fade-right">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title fs-3">Universidad de Chile</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2017 - 2018</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Programa Académico de Bachillerato</h6>
+              <p class="card-text" style="text-align: justify;">
+                Desarrollé un conocimiento integral en distintas disciplinas, tanto del área científica y humanista.
+                Durante mi paso por el programa me adentré a diversos procesos académicos como la investigación, el
+                análisis, el debate, entre otros. Asimismo, es aquí donde desarrollé un fuerte interés por las
+                matemáticas, las teorías sociológicas y el estudio de la historia social.
+              </p>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+
+
   <!-- Habilidades -->
   <section class="habilidades py-4">
     <div class="container">
       <h2 class="title is-4">Habilidades</h2>
-      <div id="habilidades" class="tags are-medium">
+      <div id="habilidades" class="tags are-medium" data-aos="flip-left">
         <span class="tag">HTML</span>
         <span class="tag">CSS</span>
         <span class="tag">JavaScript</span>
@@ -400,15 +408,16 @@
   <!-- FOOTER -->
   <footer class="align-middle text-center py-5">
     <div class="container">
-      <a class="swirl-in-fwd" href="mailto:esteban.alfonso999@gmail.com"><i class="fas fa-envelope"
+      <a class="swirl-in-fwd " href="mailto:esteban.alfonso999@gmail.com"><i class="fas fa-envelope text-dark fa-2x"
           data-toggle="tooltip" data-placement="top" title='esteban.alfonso999@gmail.com'></i></a>
       <a href="https://www.linkedin.com/in/esteban-hern%C3%A1ndez-c%C3%A1ceres-979a46208/" target="about_blank"><i
-          class="fab fa-linkedin-in" data="target" about="_blank" data-toggle="tooltip" data-placement="top"
+          class="fab fa-linkedin-in text-dark fa-2x" data="target" about="_blank" data-toggle="tooltip" data-placement="top"
           title="Visita mi perfil en LinkedIn"></i></a></a>
       <a href="https://github.com/stivhc" target="about_blank" data-toggle="tooltip" data-placement="top"
-        title="Visita mi perfil en Github"><i class="fab fa-github"></i></a>
+        title="Visita mi perfil en Github"><i class="fab fa-github text-dark fa-2x"></i></a>
       <p class="pt-2">© Esteban Hernández Cáceres. Todos los derechos reservados.</p>
   </footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
