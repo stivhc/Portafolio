@@ -1,28 +1,25 @@
+.navbar {
+  position: fixed;
+  background-color: #bad4aa;
+}
+.navbar-collapse {
+  display: none; /* Oculto por defecto */
+}
+.navbar-collapse.show {
+  display: block; /* Mostrar cuando tenga la clase 'show' */
+}
+
+.nav-link {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
 header {
   padding: 2rem 0;
   padding-top: 30px;
   text-align: center;
-  background-color: #e4e9d5;
-}
-
-/* Ajusta el espaciado del cuerpo para evitar que el contenido se superponga */
-body {
-  margin: 0; /* Elimina márgenes por defecto */
-  padding: 0; /* Elimina padding por defecto */
-  padding-top: 60px;
-}
-
-.navbar {
-  position: fixed;
-}
-
-/* Hero Section */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  padding: 4rem 0;
-  align-items: center;
+  background-color: #f0ead2;
+  color: #000000;
 }
 
 #fotodeperfil {
@@ -39,12 +36,23 @@ body {
 } /* Focus Areas */
 
 #Proyectos {
-  background-color: #a98467;
+  background-color: #bad4aa;
 }
 #Publicaciones {
-  background-color: #a98467;
+  background-color: #bad4aa;
   padding: 4rem 0;
   text-align: center;
+}
+
+#btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 .publicaciones-grid {
@@ -60,50 +68,20 @@ body {
 }
 
 #Actualmente {
-  background-color: #e4e9d5;
-}
-
-#btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #000000;
-  color: white;
-  text-decoration: none;
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  background-color: #f0ead2;
+  color: #000000;
 }
 
 .section {
   padding: 3rem 1.5rem;
 }
 
+#experiencia {
+  background-color: #f0ead2;
+}
+
 .image.is-rounded {
   border: 3px solid #00d1b2;
-}
-
-/* Estilo base para las tarjetas */
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Asegura que los elementos se distribuyan uniformemente */
-  height: 300px; /* Define una altura fija */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega un sombreado elegante */
-}
-
-/* Asegurar que las descripciones no desborden */
-.card-content p {
-  overflow: hidden; /* Oculta el texto que exceda el espacio */
-  text-overflow: ellipsis; /* Añade '...' al final del texto si es muy largo */
-  display: -webkit-box; /* Soporte para texto truncado en múltiples líneas */
-  -webkit-line-clamp: 3; /* Limita a 3 líneas de texto */
-  -webkit-box-orient: vertical;
-  height: 4.5em; /* Ajustar la altura al número de líneas */
-}
-
-/* Estilo para el botón en la parte inferior */
-.card-content .button {
-  margin-top: auto; /* Empuja el botón hacia la parte inferior */
 }
 
 /* Asegurar que las imágenes sean responsivas */
@@ -114,14 +92,6 @@ body {
   max-height: 150px; /* Ajusta la altura máxima para mantener proporción */
 }
 
-/* General Styles for the Cards */
-.section3_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Espaciado entre tarjetas */
-}
-
 .card {
   width: 300px; /* Tamaño uniforme de las tarjetas */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -130,8 +100,9 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efecto flotante de las card*/
 .card:hover {
-  transform: translateY(-10px); /* Efecto flotante */
+  transform: translateY(-10px);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -146,17 +117,6 @@ body {
   text-align: center;
 }
 
-.card-body_buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px; /* Espacio entre botones */
-}
-
-.card-body_btn {
-  flex: 1; /* Asegura que los botones tengan el mismo tamaño */
-  text-align: center;
-}
-
 /* Badges Styles */
 .container_badges span {
   display: inline-block;
@@ -166,4 +126,27 @@ body {
   border-radius: 20px;
   background-color: #333;
   color: #fff;
+}
+
+#experiencia {
+  color: #000000;
+}
+
+.habilidades {
+  background-color: #f0ead2;
+}
+
+.tags .tag {
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #bad4aa;
+  color: #000000;
 }
