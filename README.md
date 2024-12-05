@@ -24,15 +24,15 @@ Programa Académico de Bachillerato
 
 El portafolio está desarrollado con:
 
-  Bootstrap para un diseño responsive.
-  AOS para animaciones suaves.
-  API de GitHub para mostrar dinámicamente proyectos destacados.
+  -Bootstrap para un diseño responsive.
+  -AOS para animaciones suaves.
+  -API de GitHub para mostrar dinámicamente proyectos destacados.
 
 ## Estructura del proyecto
 
-```index.html```: Se presenta una página principal con información sobre mí, mis proyectos, publicaciones académicas, en lo que me encuentro actualmente, mi educación y habilidades.
-```styles.css```: Estilos personalizados.
-```scripts.js```: Carga dinámica de proyectos desde la API de GitHub.
+  - ```index.html```: Se presenta una página principal con información sobre mí, mis proyectos, publicaciones académicas, en lo que me encuentro actualmente, mi educación y habilidades.
+  - ```styles.css```: Estilos personalizados.
+  - ```scripts.js```: Carga dinámica de proyectos desde la API de GitHub.
 
 # Educación
 Universidad de Chile: Licenciatura en Sociología (2019-2022).
@@ -45,10 +45,10 @@ Desarrollé un conocimiento integral en distintas disciplinas, tanto del área c
 Puedes explorar distintos proyectos en los que he trabajado en mi perfil de [GitHub](https://github.com/stivhc)
 
 # Mis Redes
-[LinkedIn](https://www.linkedin.com/in/esteban-hern%C3%A1ndez-c%C3%A1ceres-979a46208/)
-[Gmail](esteban.alfonso999@gmail.com)
-[Github](https://github.com/stivhc)
-[ORCID](https://orcid.org/0000-0003-2845-6264)
+  * [LinkedIn](https://www.linkedin.com/in/esteban-hern%C3%A1ndez-c%C3%A1ceres-979a46208/)
+  *  [Gmail](esteban.alfonso999@gmail.com)
+  *  [Github](https://github.com/stivhc)
+  *  [ORCID](https://orcid.org/0000-0003-2845-6264)
 
 ## Autor
 
